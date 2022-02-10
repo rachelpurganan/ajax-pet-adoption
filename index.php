@@ -45,7 +45,7 @@
     $("document").ready(function(){
         
         
-        $('#myForm').submit(function(e){
+        $('#myForm').submit(function(e){ //.submit is an event handler, just like .click
             e.preventDefault();//no need to submit as you'll be doing AJAX on this page
             let feels = $("input[name=feels]:checked").val();
             let likes = $("input[name=likes]:checked").val();
