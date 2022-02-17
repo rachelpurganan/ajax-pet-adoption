@@ -11,6 +11,7 @@
         margin-bottom:2%;
         }  
 
+        /*changes font and font size and highlights the pet name in the output*/
         .petName {
           font-family: 'Courgette', cursive;
           font-size: 25px;
@@ -59,6 +60,7 @@
 <p><a href="index.php">RESET</a></p>
 <script>
 
+    //titleCase function
     function titleCase(str){
       str = str.toLowerCase().split(' ');
       for (var i = 0; i < str.length; i++) {
@@ -124,9 +126,10 @@
               pet = "velociraptor";
             }
 
+            //this titleCases the output of the name of the pet that the user inputted.
             petName = titleCase(petName);
-            //pet = toLowerCase(pet);
 
+            //the span class is created here, so that we can refer to it in the <style> tag for css
             output += `<p>Meet <span class="petName">${petName}</span>! ${petName} is a ${feels} ${pet} that likes to be ${likes}, just like you wanted! On your next trip to the grocery store, make sure you grab some ${eats} on the way out because that's their favorite food!</p> <p>Congratulations on your new companion, I wish you both happiness!</p>`
 
             /*
